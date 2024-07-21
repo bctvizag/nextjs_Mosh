@@ -1,7 +1,7 @@
 import React from 'react'
 import AddToCardBtn from './AddToCardBtn'
 
-const ProductCard = () => {
+const ProductsCard = () => {
   return (
     <div>
       <p>ProductCard</p>
@@ -12,4 +12,4 @@ const ProductCard = () => {
   )
 }
 
-export default ProductCard
+export default ProductsCard

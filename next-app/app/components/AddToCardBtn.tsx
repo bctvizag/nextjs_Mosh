@@ -4,7 +4,11 @@ import React from 'react'
 function AddToCardBtn() {
   return (
     <>
-      <button>Add to Cart</button>
+      <button className='btn btn-primary'
+      onClick={      () => {
+       console.log('Add to cart clicked')
+      }}
+      >Add to Cart</button>
     </>
   )
 }
