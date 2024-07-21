@@ -1,0 +1,15 @@
+import React from 'react'
+import AddToCardBtn from './AddToCardBtn'
+
+const ProductCard = () => {
+  return (
+    <div>
+      <p>ProductCard</p>
+      <AddToCardBtn />
+
+
+    </div>
+  )
+}
+
+export default ProductCard
