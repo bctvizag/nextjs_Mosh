@@ -31,7 +31,7 @@ const UserTable = async ({sortOrder}:Props) => {
         <div>
             <h2 className='text-2xl font-bold mt-4 underline'>Users List</h2>
            
-            <table className='table  table-bordered'>
+            <table className='table table-bordered'>
                 <thead>
                     <tr>
                         <th>

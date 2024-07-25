@@ -11,21 +11,42 @@ interface Props {
 const UsersPage = async ({searchParams:{sortOrder}}:Props) => {
 
   return (
-    <div>
-      <div>UsersPage</div>
-      <nav className='flex gap-2'>
-        <Link href="new">New Userdd</Link> <br />
+    <>
+    <div>UsersPage</div>
+    <div className='flex gap-2'>
+      
+      <nav className='flex flex-col'>
         <Link href="/">Home</Link>
+       
+        <Link href="users/new">user/new</Link> 
+        <Link href="users/12">User/id</Link> 
+        <Link href="users/12/photo/23">User/id/photo/photoid</Link> 
+       
+
+        
+        <Link href="/items/CPU">/items/CPU</Link>
+        <Link href="/items/SSD/256">/items/SSD/256</Link>
+
+        <Link href="/products">product</Link>
+        <Link href="/products/dairy">product/dairy</Link>
+        <Link href="/products/dairy/milk">product/dairy/milk</Link>
+
+        <Link href="/products?sortOrder=price">products?sortOrder=price</Link>
       </nav>
+
       <div>
         <ProductsCard />
+
+        <p>Sortby : {sortOrder}</p>
+        <UserTable sortOrder = {sortOrder}/>
       </div>
-      <p>Sortby : {sortOrder}</p>
-    <UserTable sortOrder = {sortOrder}/>
+      
 
 
 
     </div>
+    </>
+    
   )
 }
 

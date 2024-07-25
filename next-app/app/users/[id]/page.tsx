@@ -2,7 +2,7 @@ import React from 'react'
 
 interface Props {
   params: {
-    id: string
+    id: number
   }
 }
 const UserDetailPage = ({params:{id}}:Props) => {
